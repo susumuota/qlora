@@ -1,7 +1,7 @@
 python qlora.py \
-    --model_name_or_path meta-llama/Llama-2-7b-hf \
+    --model_name_or_path meta-llama/Llama-2-13b-hf \
     --use_auth \
-    --output_dir ./output/llama-2-guanaco-7b \
+    --output_dir ./output/llama-2-guanaco-13b \
     --logging_steps 10 \
     --save_strategy steps \
     --data_seed 42 \
@@ -39,7 +39,7 @@ python qlora.py \
     --learning_rate 0.0002 \
     --adam_beta2 0.999 \
     --max_grad_norm 0.3 \
-    --lora_dropout 0.1 \
+    --lora_dropout 0.05 \
     --weight_decay 0.0 \
     --seed 0 \
     --report_to wandb \
